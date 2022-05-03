@@ -28,8 +28,6 @@ hxDisable :: Attribute
 hxDisable = hxDisable_ ""
 {-# INLINE hxDisable #-}
 
-
--- only a selection of values possible
 hxDisinherit :: Attribute
 hxDisinherit = attribute "hx-disinherit" " hx-disinherit=\"" ""
 {-# INLINE hxDisinherit #-}
@@ -41,7 +39,6 @@ hxEncoding_ = attribute "hx-encoding" " hx-encoding=\""
 hxEncoding :: Attribute
 hxEncoding = hxEncoding_ "multipart/form-data"
 {-# INLINE hxEncoding #-}
-
 
 hxExt :: AttributeValue -> Attribute
 hxExt = attribute "hx-ext" " hx-ext=\""
@@ -107,7 +104,7 @@ hxSelect :: AttributeValue -> Attribute
 hxSelect = attribute "hx-select" " hx-select=\""
 {-# INLINE hxSelect #-}
 
--- deprecated
+-- | Deprecated. Use "Text.Blaze.Htmx.ServerSentEvents" instead.
 hxSse_ :: AttributeValue -> Attribute
 hxSse_ = attribute "hx-sse" " hx-sse=\""
 {-# INLINE hxSse_#-}
@@ -136,11 +133,12 @@ hxVals :: AttributeValue -> Attribute
 hxVals = attribute "hx-vals" " hx-vals=\""
 {-# INLINE hxVals #-}
 
--- deprecated
+-- | Deprecated. Use 'hxVals'.
 hxVars_ :: AttributeValue -> Attribute
 hxVars_ = attribute "hx-vars" " hx-vars=\""
 {-# INLINE hxVars_ #-}
 
+-- | Deprecated. Use "Text.Blaze.Htmx.WebSockets" instead.
 hxWs_ :: AttributeValue -> Attribute
 hxWs_ = attribute "hx-ws" " hx-ws=\""
 {-# INLINE hxWs_ #-}
