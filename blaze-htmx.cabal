@@ -12,6 +12,7 @@ version:             0.1.0.0
 license-file:        LICENSE
 author:              Tobias Brandt
 maintainer:          tobbra91@gmail.com
+Homepage:            https://github.com/TobiasB91/blaze-htmx
 -- copyright:
 -- category:
 build-type:          Simple

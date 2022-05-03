@@ -113,8 +113,7 @@ hxSse_ = attribute "hx-sse" " hx-sse=\""
 {-# INLINE hxSse_#-}
 
 hxSwap :: AttributeValue -> Attribute
-hxSwap = attr
-ibute "hx-swap" " hx-swap=\""
+hxSwap = attribute "hx-swap" " hx-swap=\""
 {-# INLINE hxSwap #-}
 
 hxSwapOob :: AttributeValue -> Attribute
