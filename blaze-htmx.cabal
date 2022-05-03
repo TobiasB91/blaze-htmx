@@ -5,23 +5,23 @@ cabal-version:       >=1.10
 
 name:                blaze-htmx
 version:             0.1.0.0
--- synopsis:
--- description:
+synopsis: Blaze integration of the htmx library
+description: Blaze integration of the htmx library including WS and SSE extensions
 -- bug-reports:
--- license:
+license: 	     BSD3
 license-file:        LICENSE
 author:              Tobias Brandt
 maintainer:          tobbra91@gmail.com
 Homepage:            https://github.com/TobiasB91/blaze-htmx
--- copyright:
--- category:
+copyright:	     Tobias Brandt
+category:	     Text, Web
 build-type:          Simple
 extra-source-files:  CHANGELOG.md
 
 library
   exposed-modules:     Text.Blaze.Htmx
-  		     , Text.Blaze.Htmx.WebSockets
-		     , Text.Blaze.Htmx.ServerSentEvents
+                     , Text.Blaze.Htmx.WebSockets
+                     , Text.Blaze.Htmx.ServerSentEvents
   build-depends:       base >=4.13 && <4.14
                      , blaze-html
                      , blaze-markup
