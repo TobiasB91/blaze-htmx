@@ -28,8 +28,8 @@ hxDisable :: Attribute
 hxDisable = hxDisable_ ""
 {-# INLINE hxDisable #-}
 
-hxDisinherit :: Attribute
-hxDisinherit = attribute "hx-disinherit" " hx-disinherit=\"" ""
+hxDisinherit :: AttributeValue -> Attribute
+hxDisinherit = attribute "hx-disinherit" " hx-disinherit=\""
 {-# INLINE hxDisinherit #-}
 
 hxEncoding_ :: AttributeValue -> Attribute
